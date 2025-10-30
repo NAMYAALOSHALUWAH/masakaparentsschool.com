@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+    <title>Docoment</title>
+    </head>
+    <body>
+            <!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Inline-Style Responsive Navbar</title>
+                <style>
+                  body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                  }
+                  .navbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: blue;
+                    margin-left: 0;
+                    margin-right: 0;
+                  }
+                  .img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    padding-left: 2rem;
+                  }
+                  .menu-toggle {
+                    display: none;
+                    padding-left: 1rem;
+                  }
+                  .hamburger {
+                    display: none;
+                    font-size: 1.8rem;
+                    color: #fff;
+                    cursor: pointer;
+                    padding-left: 1.5rem;
+                  }
+                  .nav-links {
+                    list-style: none;
+                    display: flex;
+                    margin: 0;
+                    padding-left: 1rem;
+                  }
+            
+                  .nav-links li {
+                    margin-left: 1.5rem;
+                    padding-left: 1rem;
+                  }
+            
+                  .nav-links a {
+                    color: #fff;
+                    text-decoration: none;
+                    transition: color 0.3s;
+                    padding-left: 1.5rem;
+                  }
+            
+                  .nav-links a:hover {
+                    color: #d49898;
+                  }
+                  @media (max-width: 768px) {
+                    .hamburger {
+                      display: block;
+                    }
+                    .nav-links {
+                      position: absolute;
+                      top: 60px;
+                      right: 0;
+                      background: #333;
+                      flex-direction: column;
+                      width: 200px;
+                      display: none;
+                    }
+                    .menu-toggle:checked + .hamburger + .nav-links {
+                      display: flex;
+                      position: fixed;
+                    }
+                    .nav-links li {
+                      margin: 1rem 0;
+                      text-align: center;
+                    }
+                  }
+                </style>
+              </head>
+              <body>
+                <nav class="navbar">
+                  <img
+                    style="width: 7rem; height: auto; padding: 0.2rem 1.5rem"
+                    src="badge.jpg"
+                  />
+                  <p style="flex: 1;min-width:200px;color: white;">MASAKA PARENTS SECONDARY SCHOOL<br>
+            "Change your status"</p>
+                  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                  <label for="menu-toggle" class="hamburger" style="user-select: none"
+                    >&#9776;</label
+                  >
+                  <ul class="nav-links">
+                    <li><a href="#" style="color: #fff">Home</a></li>
+                    <li><a href="#" style="color: #fff">About</a></li>
+                    <li><a href="#" style="color: #fff">Gallery</a></li>
+                    <li><a href="#" style="color: #fff padding-left:1rem">Contact</a></li>
+                  </ul>
+                </nav>
+                <div class="col-container">
+                    <h2 style="color:blue">VISION</h2>
+                    <p>Having self reliant person in ever changing world</p>
+                    <div class="col-container">
+                      <h2 style="color: blue;">MISSION</h2>
+                      <p>To excel in providing holistic information to the learners and relevant services to the stake holders</p>
+<img src="students.jpg">
+<h2 style="color: blue;">WELCOMING MESSAGE</h2>
+<p>Its my great pleasure to welcome you to Masaka Parents SSS. Our school is a place of high standards, mutual respect,and a shared commitment to the pe
+  ursuit of excellence in all that we do.
+  At Masaka Parents,we are dedicatd to providing an outstanding education that enables every student to realise their full potential. We value academic achievement highly, but we also recognise the impotanceof developing well_rounded individuals who demonstrate integrity, resilience,and a sense of responibility to others.
+  Our staff are deeply commited to ensuring that every student benefits from a rich and challenging curriculum,supported by a wide range of extracurricular opportunities that encourage creativity,leadership,and personal growth. We take great pride in fostering an enviroment in which all members of our community feel safe,valued,and inpired to succeed.
+  Whether you are a prospective parent,a current member of our school community,or a visitor exploring what we offer, I hope this website gives you a sense of the warmth,ambition,and excellence that defines Masaka Parents SS.
+  Thank you for taking the time to learn more about us. I warmly invite you to visit our school and experience the Masaka Parents SS spirit for yourself.<br>
+  MUTEGANDA MUSA<br>
+  HEAD TEACHER<br>
+  MASAKA PARENTS SS </p>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Responsive Slideshow</title>
+    </head>
+    <body>
+      <div
+        style="
+          width: 100%;
+          max-width: 800px;
+          margin: auto;
+          position: relative;
+          overflow: hidden;
+        "
+      >
+        <div style="display: flex; width: 300%; animation: slide 20s infinite">
+          <div style="width: 33.33%; height: 400px">
+            <img
+              src="students1.jpg"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div style="width: 33.33%; height: 400px">
+            <img
+              src="students2.jpg"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div style="width: 33.33%; height: 400px">
+            <img
+              src="students3.jpg"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+      <style>
+        @keyframes slide {
+          0% {
+            transform: translateX(0%);
+          }
+          33% {
+            transform: translateX(0%);
+          }
+          44% {
+            transform: translateX(-33.33%);
+          }
+          77% {
+            transform: translateX(-33.33%);
+          }
+          88% {
+            transform: translateX(-66.66%);
+          }
+          100% {
+            transform: translateX(-66.66%);
+          }
+        }
+      </style>
+      <h2 style="color: blue;">HISTORY OF THE SCHOOL</h2>
+      <p>Masaka Parents SSS was started in 2001 by four directors that include
+        Hajjat Janat Kayondo
+        Mr.Sseruggo Robert Ssekkoba
+        Mr.Ssemambo Isa Lukoda
+        It is located in Ssenyange village,in Masaka city.it is regestered with the ministry of Education and Sports as a partnership school
+      </p>
+      <h2 style="text-align: center;color:blue;">CONTACT US</h2>
+              <div style="border-radius: 20px;border: 1px solid;width: 200px;margin: auto;padding: 200px;">
+                <p><strong>Address:</strong>Masaka</p>
+                <p><strong>P.o box:</strong>1192,Masaka</p>
+                <p><strong>Email:</strong><a href="masakaparentsss@gmail.com" style="color: blue;text-decoration: none;">masakaparentsss@gmail.com</a></p>
+                <p><strong>Contact:</strong><a href="tel:+256777335453" style="color:blue;text-decoration: none;">+256777335453</a></p></div>
+                <footer style="text-align: center;color: blue;">@2025 All Rights are Reserved by Masaka Parents Secondary School</footer>
